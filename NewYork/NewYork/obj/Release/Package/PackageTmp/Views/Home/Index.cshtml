@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <!--<h1>Weclome to New York</h1>-->
+    <center><img src="~/Images/newyork1.jpg" style="width:600px;"/></center>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Visitor Info</h2>
+        <p>
+            <img src="~/Images/visitorinfo.jpg" />
+        </p>
+        <!--<p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>-->
+        <p class="btn btn-default">@Html.ActionLink("More >>", "Info", "Home") </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Top Attrations</h2>
+        <p>A great way to discover New York. Book a boat, bus, walking or bike tour and see the city anew.<img src="~/Images/attraction.jpg" /></p>
+        <p class="btn btn-default">@Html.ActionLink("More >>", "Attractions", "Home")</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Top Broadway Shows</h2>
+        <p>
+            It is time to start planning a year of Broadway.
+            <img src="~/Images/broadway.jpg" />
+        </p>
+        <p class="btn btn-default">@Html.ActionLink("More >>", "Index", "Store")</p>
+    </div>
+</div>
